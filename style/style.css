@@ -1,3 +1,14 @@
+/* CUSTOM PROPS */
+:root {
+  --text-color: #9e9aa8;
+  --heading-color: #34313d;
+  --accent-color: #2BD0D0;
+  --light-bg: #EFF1F7;
+  --dark-bg: #232127;
+  --accent-color-hover: #9ae3e3;
+  --error-color: #f46363;
+}
+
 /* GLOBAL STYLES*/
 html {
   box-sizing: border-box;
@@ -15,11 +26,12 @@ body {
  padding: 0%;
  margin: 0%;
  height: 100%;
- font-family: "Arial",sans-serif;
- font-size: 16px;
- line-height: 1.5;
+ font-family: "Poppins","Arial",sans-serif;
+ font-weight: 500;
+ font-size: 15px;
+ line-height: 26px;
  background-color: #fff;
- color: #222;
+ color: var(--text-color);
 }
 img {
   max-width: 100%;
@@ -29,13 +41,39 @@ img {
 /* CONTAINER */
 .container {
 width: 100%;
-max-width: 1200;
+max-width: 1150px;
 margin-right: auto;
 margin-left: auto;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 .main-content {
   flex-grow: 1;
+}
+
+/* FONTS*/
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/poppins-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
