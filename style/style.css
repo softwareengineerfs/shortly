@@ -1,13 +1,15 @@
 /* CUSTOM PROPS */
 :root {
   --text-color: #9e9aa8;
-  --heading-color: #34313d;
+  --text-color-dark: #34313d;
   --accent-color: #2BD0D0;
   --light-bg: #EFF1F7;
   --dark-bg: #232127;
   --accent-color-hover: #9ae3e3;
   --error-color: #f46363;
 }
+
+
 
 /* GLOBAL STYLES*/
 html {
@@ -38,6 +40,41 @@ img {
   height: auto;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 14px 40px 12px;
+  border: 0;
+  border-radius: 28px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--accent-color-hover);
+}
+.button:active {
+ opacity: 0.6;
+}
+.button--small {
+  padding: 8px 24px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+.button--big {
+  padding: 18px 40px 16px ;
+}
+.button--rectangle {
+  border-radius: 5px;
+}
+.button--rectangle-big {
+  border-radius: 10px;
+}
 /* CONTAINER */
 .container {
 width: 100%;
@@ -76,4 +113,79 @@ padding-right: 20px;
   font-style: italic;
   font-weight: 500;
   src: url('../fonts/poppins-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* SITE HEADER */
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+  font-weight: bold;
+  line-height: normal;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+.site-header__logo {
+  margin-right: 45px;
+}
+
+/* LOGO */
+
+.logo {
+  display: inline-block;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:hover {
+  opacity: 0.6;
+}
+.logo__img {
+  display: block;
+  width: 120px;
+  height: 33px;
+  object-fit: cover;
+}
+.site-header__sitenav {
+  margin-right: auto;
+}
+.sitenav {
+}
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 30px;
+}
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.sitenav__link:hover {
+  color: var(--text-color-dark);
+}
+.sitenav__link:active {
+  opacity: 0.6;
+}
+.site-header__auth {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+.site-header__logo-link {
+  margin-right: 37px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.site-header__logo-link:hover {
+  color: var(--text-color-dark);
+}
+.site-header__logo-link:active {
+  opacity: 0.6;
 }
