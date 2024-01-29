@@ -76,6 +76,9 @@ img {
 .button--rectangle-big {
   border-radius: 10px;
 }
+.url-shortener__copy-button {
+  min-width: 103px;
+}
 /* CONTAINER */
 .container {
 width: 100%;
@@ -264,6 +267,7 @@ padding-right: 20px;
 }
 .index-url-shortener-features-wrapper__url-shortener {
   margin-top: -84px;
+  margin-bottom: 120px;
 }
 
 /* URL SHORTENR */
@@ -273,6 +277,7 @@ padding-right: 20px;
 .url-shortener__form {
   display: flex;
   padding: 48px 64px;
+  margin-bottom: 24px;
   border-radius: 10px;
   background-color: #4b3f6b;
   background-image: url("../img/purple-bg.svg");
@@ -319,4 +324,40 @@ padding-right: 20px;
   color: var(--error-color);
   letter-spacing: 0.11px;
 
+}
+
+
+/* url-shortener__results */
+.url-shortener__results {
+  font-size: 20px;
+  line-height: 36px;
+}
+.url-shortener__result {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--text-color-dark);
+}
+.url-shortener__result {
+  margin-bottom: 16px;
+}
+.url-shortener__original-link {
+  width: 100%;
+  margin-right: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.url-shortener__short-link {
+  margin-right: 24px;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.button {
+}
+.button--small {
+}
+.button--rectangle {
 }
