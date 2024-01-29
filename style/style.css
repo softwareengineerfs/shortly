@@ -54,6 +54,7 @@ img {
   font-size: 20px;
   line-height: 1.5;
   cursor: pointer;
+  white-space: nowrap;
 }
 .button:hover {
   background-color: var(--accent-color-hover);
@@ -89,6 +90,43 @@ padding-right: 20px;
   flex-grow: 1;
 }
 
+/* PLACEHOLDER */
+
+::-webkit-input-placeholder {
+	color: rgb(52, 49, 61);
+  opacity: 0.6;
+}
+:-moz-placeholder {
+	color: rgb(52, 49, 61);
+  opacity: 0.6;
+}
+::-moz-placeholder {
+	color: rgb(52, 49, 61);
+  opacity: 0.6;
+}
+:-ms-input-placeholder {
+	color: rgb(52, 49, 61);
+  opacity: 0.6;
+}
+::placeholder {
+	color: rgb(52, 49, 61);
+  opacity: 0.6;
+}
+
+/* VISUALLY HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* FONTS*/
 /* poppins-500 - latin */
 @font-face {
@@ -215,4 +253,70 @@ padding-right: 20px;
   margin-bottom: 40px;
   font-size: 22px;
   line-height: 36px;
+}
+
+
+/* index-url-shortener-features-wrapper */
+.index-url-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+/* URL SHORTENR */
+
+.url-shortener {
+}
+.url-shortener__form {
+  display: flex;
+  padding: 48px 64px;
+  border-radius: 10px;
+  background-color: #4b3f6b;
+  background-image: url("../img/purple-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.utl-shortener__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+.utl-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--text-color-dark);
+}
+.url-shortener__error-msg {
+  display: none;
+}
+
+.utl-shortener__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.utl-shortener__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--error-color);
+  letter-spacing: 0.11px;
+
 }
