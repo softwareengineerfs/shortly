@@ -4,7 +4,7 @@ const elUrlShortenerForm = document.querySelector(".js-url-shortener-form");
 const elUrlShortenerResults = document.querySelector(".url-shortener__results");
 
 
-
+// open form
 if (elUrlShortenerForm) {
 
   elUrlShortenerForm.addEventListener('submit', function (evt) {
@@ -15,7 +15,7 @@ if (elUrlShortenerForm) {
 
 }
 
-
+// make form interactive
 if (elUrlShortener) {
   elUrlShortener.addEventListener('click', function (evt) {
     if (evt.target.matches(".js-copy-short-link-button")) {
@@ -25,6 +25,10 @@ if (elUrlShortener) {
 
       //change bgcolor
       evt.target.classList.add("url-shortener__copy-button--copied");
+
+
+      //copy short link
+      navigator.clipboard.writeText(evt.target.previousElementSibling.textContent);
 
       //Reset button text and class after 5 seconds
       setTimeout(function (){
