@@ -395,6 +395,7 @@ select:-webkit-autofill:focus {
   margin-top: 0;
   margin-bottom: 18px;
   font-size: 40px;
+  text-transform: capitalize;
   line-height: 48px;
   color: var(--text-color-dark);
 }
@@ -455,6 +456,13 @@ select:-webkit-autofill:focus {
   background-color: #3a3054;
 }
 .index-feature__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: normal;
+  color: var(--text-color-dark);
+  text-transform: capitalize;
 }
 .index-feature__info {
+  margin: 0;
 }
