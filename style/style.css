@@ -466,3 +466,26 @@ select:-webkit-autofill:focus {
 .index-feature__info {
   margin: 0;
 }
+
+/* CTA  */
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-image: url("../img/CTA-BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.cta__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+}
